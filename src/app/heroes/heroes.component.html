@@ -7,8 +7,10 @@
 
 <div>
 
-    <label>name:  
-      <input [(ngModel)]="hero.name" placeholder="name" >
-    </label>
+  <form>
+    <mat-form-field style="width: 100%;">
+        <input [(ngModel)]="hero.name" name="hero.name" matInput placeholder="Name" >
+    </mat-form-field>
+  </form>
 
 </div>
