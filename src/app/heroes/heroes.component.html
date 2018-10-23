@@ -1,16 +1,9 @@
-<h2>{{ hero.name | uppercase }} Details</h2>
-<div><span>id: </span>{{hero.id}}</div>
-<div><span>name: </span>{{hero.name}}</div>
+<h2>Heroes</h2>
 
-<br /> 
-<br /> 
+<mat-list>
+  <mat-list-item (click)="onSelect(hero)" *ngFor="let hero of heroes">{{hero.id}} - {{hero.name}}</mat-list-item>
+</mat-list>
 
-<div>
+<mat-divider></mat-divider>
 
-  <form>
-    <mat-form-field style="width: 100%;">
-        <input [(ngModel)]="hero.name" name="hero.name" matInput placeholder="Name" >
-    </mat-form-field>
-  </form>
-
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail> 
