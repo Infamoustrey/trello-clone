@@ -1,5 +1,27 @@
-<mat-card style="margin: 0.5em;">
-    <h1>{{title}}</h1>
+<div class="grid-container">
+ 
+    <div class="grid grid-xs-8">
+        <router-outlet></router-outlet>
+    </div> 
 
-    <app-heroes></app-heroes>
-</mat-card>
+    <div class="grid grid-xs-3">
+
+        <mat-list>
+            <mat-list-item>
+                <a color="primary" mat-raised-button routerLink="/heroes">Heroes</a>
+            </mat-list-item>
+            <mat-list-item>
+                <a color="primary" mat-raised-button routerLink="/dashboard">Dashboard</a>
+            </mat-list-item>
+        </mat-list>
+
+        <br />
+        <br />
+
+        <app-messages></app-messages>
+
+    </div>
+
+</div>
+
+ 

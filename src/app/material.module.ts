@@ -9,6 +9,7 @@ import {
   MatInputModule,
   MatDividerModule,
   MatCardModule,
+  MatGridListModule,
   MatFormFieldModule
 } from '@angular/material';
 
@@ -20,6 +21,7 @@ import {
     MatToolbarModule,
     MatInputModule,
     MatIconModule,
+    MatGridListModule,
     MatFormFieldModule,
     MatDividerModule,
     MatCardModule
@@ -33,6 +35,7 @@ import {
     MatIconModule,
     MatDividerModule,
     MatFormFieldModule,
+    MatGridListModule,
     MatCardModule
   ]
 })

@@ -1,9 +1,14 @@
-<h2>Heroes</h2>
+<mat-card>
 
-<mat-list>
-  <mat-list-item (click)="onSelect(hero)" *ngFor="let hero of heroes">{{hero.id}} - {{hero.name}}</mat-list-item>
-</mat-list>
+  <h2>Heroes</h2>
 
-<mat-divider></mat-divider>
+  <mat-list>
+    <mat-list-item (click)="onSelect(hero)" 
+      *ngFor="let hero of heroes">{{hero.id}} - {{hero.name}}</mat-list-item>
+  </mat-list>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail> 
+  <mat-divider></mat-divider>
+
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail> 
+
+</mat-card>
